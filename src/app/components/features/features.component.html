@@ -1,0 +1,15 @@
+<section class="features" id="features">
+  <div class="features-header">
+    <h2 class="section-title">Todo lo que necesitas para superar tus límites</h2>
+    <p class="section-subtitle">Tecnología avanzada en un diseño ligero y elegante</p>
+  </div>
+  <div class="features-grid">
+    @for (feature of features; track feature.title) {
+      <div class="feature-card">
+        <div class="feature-icon">{{ feature.icon }}</div>
+        <h3 class="feature-title">{{ feature.title }}</h3>
+        <p class="feature-description">{{ feature.description }}</p>
+      </div>
+    }
+  </div>
+</section>

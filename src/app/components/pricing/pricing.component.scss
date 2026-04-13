@@ -1,0 +1,185 @@
+@use 'sass:color';
+@use '../../styles/variables' as *;
+
+.pricing {
+  padding: 6rem 2rem;
+  background: $bg-light;
+}
+
+.pricing-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.section-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: $text-dark;
+  margin: 0 0 1rem;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.section-subtitle {
+  font-size: 1.25rem;
+  color: $accent-orange;
+  font-weight: 600;
+  margin: 0;
+}
+
+.pricing-card {
+  max-width: 550px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
+  border: 3px solid $accent-green;
+}
+
+.price-badge {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.save-badge {
+  background: $accent-orange;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  display: inline-block;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.original-price {
+  font-size: 1.75rem;
+  color: $text-muted;
+  text-decoration: line-through;
+  margin-bottom: 0.5rem;
+}
+
+.launch-price {
+  font-size: 5rem;
+  font-weight: 800;
+  color: $accent-green;
+  line-height: 1;
+
+  small {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+.price-note {
+  color: $text-muted;
+  font-size: 0.95rem;
+  margin: 0.5rem 0 2rem;
+}
+
+.includes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  text-align: left;
+
+  li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    font-size: 1.05rem;
+    color: $text-dark;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.btn-buy {
+  width: 100%;
+  background: linear-gradient(135deg, $accent-orange 0%, color.adjust($accent-orange, $lightness: -10%) 100%);
+  color: white;
+  border: none;
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+  }
+}
+
+.guarantee {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: $bg-light;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.guarantee-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.guarantee-text h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: $text-dark;
+  margin: 0 0 0.5rem;
+}
+
+.guarantee-text p {
+  font-size: 0.95rem;
+  color: $text-muted;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.trust-badges {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.trust-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: $text-muted;
+}
+
+.badge-icon {
+  font-size: 1.5rem;
+}
