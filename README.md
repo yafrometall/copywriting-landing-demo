@@ -15,8 +15,8 @@ Página de aterrizaje completa para el smartwatch deportivo **TechFit X1**. Incl
 ## 🚀 Demo en vivo
 
 ```bash
-git clone <url-del-repositorio>
-cd techfit-x1
+git clone https://github.com/yafrometall/copywriting-landing-demo.git
+cd copywriting-landing-demo
 npm install
 ng serve
 ```
@@ -44,11 +44,9 @@ La app estará disponible en `http://localhost:4200`.
 
 ## 📸 Capturas de pantalla
 
-> Agrega aquí tus capturas reemplazando las rutas:
-
 | Landing Page | Checkout |
 |-------------|----------|
-| ![Landing](./screenshots/landing.png) | ![Checkout](./screenshots/checkout.png) |
+| ![Landing](./screenshots/landingpage.png) | ![Checkout](./screenshots/checkout.png) |
 
 ## 📐 Estructura del proyecto
 
@@ -77,8 +75,8 @@ src/app/
 
 ```bash
 # Clonar el repositorio
-git clone <url-del-repositorio>
-cd techfit-x1
+git clone https://github.com/yafrometall/copywriting-landing-demo.git
+cd copywriting-landing-demo
 
 # Instalar dependencias
 npm install
@@ -112,4 +110,4 @@ MIT — úsalo como referencia o plantilla para tus propios proyectos.
 
 | GitHub | LinkedIn | Email |
 |--------|----------|-------|
-| [Tu GitHub](https://github.com/tu-usuario) | [Tu LinkedIn](https://linkedin.com/in/tu-usuario) | tu@email.com |
+| [github.com/yafrometall](https://github.com/yafrometall) | [linkedin.com/in/yadira-annabel-frometa-llarena-ab780671](https://linkedin.com/in/yadira-annabel-frometa-llarena-ab780671) | yafrometall@gmail.com |
